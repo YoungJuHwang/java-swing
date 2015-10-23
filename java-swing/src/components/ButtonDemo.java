@@ -47,7 +47,7 @@ public class ButtonDemo extends JPanel implements ActionListener{
         add(b2);
         add(b3);
     }
- 
+    @Override //인터페이스의 메소드.
     public void actionPerformed(ActionEvent e) {
         if ("disable".equals(e.getActionCommand())) {
             b2.setEnabled(false);
